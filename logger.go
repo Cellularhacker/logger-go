@@ -33,44 +33,125 @@ func Init(isProductionMode bool) {
 
 func Fatal(args ...interface{}) {
 	if L == nil {
-		log.Fatalln(args)
+		log.Fatal(args)
+		return
 	}
 
 	L.Fatal(args)
 }
+func Fatalf(format string, args ...interface{}) {
+	if L == nil {
+		log.Fatalf(format, args)
+		return
+	}
+
+	L.Fatalf(format, args)
+}
+func Fatalln(args ...interface{}) {
+	if L == nil {
+		log.Fatalln(args)
+		return
+	}
+
+	L.Fatalln(args)
+}
 
 func Info(args ...interface{}) {
 	if L == nil {
-		log.Infoln(args)
+		log.Info(args)
 		return
 	}
 
 	L.Info(args)
 }
+func Infof(format string, args ...interface{}) {
+	if L == nil {
+		log.Infof(format, args)
+		return
+	}
+
+	L.Infof(format, args)
+}
+func Infoln(args ...interface{}) {
+	if L == nil {
+		log.Fatalln(args)
+		return
+	}
+
+	L.Infoln(args)
+}
 
 func Warn(args ...interface{}) {
 	if L == nil {
-		log.Warnln(args)
+		log.Warn(args)
 		return
 	}
 
 	L.Warn(args)
 }
+func Warnf(format string, args ...interface{}) {
+	if L == nil {
+		log.Warnf(format, args)
+		return
+	}
+
+	L.Warnf(format, args)
+}
+func Warnln(args ...interface{}) {
+	if L == nil {
+		log.Fatalln(args)
+		return
+	}
+
+	L.Warnln(args)
+}
 
 func Debug(args ...interface{}) {
 	if L == nil {
-		log.Debugln(args)
+		log.Debug(args)
 		return
 	}
 
 	L.Debug(args)
 }
+func Debugf(format string, args ...interface{}) {
+	if L == nil {
+		log.Debugf(format, args)
+		return
+	}
+
+	L.Debugf(format, args)
+}
+func Debugln(args ...interface{}) {
+	if L == nil {
+		log.Fatalln(args)
+		return
+	}
+
+	L.Debugln(args)
+}
 
 func Error(args ...interface{}) {
 	if L == nil {
-		log.Errorln(args)
+		log.Error(args)
 		return
 	}
 
 	L.Error(args)
+}
+func Errorf(format string, args ...interface{}) {
+	if L == nil {
+		log.Errorf(format, args)
+		return
+	}
+
+	L.Errorf(format, args)
+}
+func Errorln(args ...interface{}) {
+	if L == nil {
+		log.Fatalln(args)
+		return
+	}
+
+	L.Errorln(args)
 }

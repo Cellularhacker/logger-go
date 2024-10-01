@@ -1,6 +1,6 @@
 module github.com/Cellularhacker/logger
 
-go 1.23.0
+go 1.23.1
 
 require (
 	github.com/onsi/ginkgo v1.16.5
@@ -10,5 +10,5 @@ require (
 
 require (
 	go.uber.org/multierr v1.11.0 // indirect
-	golang.org/x/sys v0.24.0 // indirect
+	golang.org/x/sys v0.25.0 // indirect
 )
