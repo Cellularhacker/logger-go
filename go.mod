@@ -1,4 +1,4 @@
-module github.com/Cellularhacker/logger
+module github.com/Cellularhacker/logger-go
 
 go 1.23.1
 
