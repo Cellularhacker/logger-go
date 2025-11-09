@@ -1,16 +1,17 @@
 package logger
 
 import (
+	"time"
+
 	"github.com/onsi/ginkgo/reporters/stenographer/support/go-colorable"
 	log "github.com/sirupsen/logrus"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
-	"time"
 )
 
 var L *zap.SugaredLogger
 
-// Init -initializes the logger, different in test and production, call after config.Init
+// Init - initializes the logger, different in test and production, call after config.Init
 func Init(isProductionMode bool) {
 	if isProductionMode {
 		zc, err := zap.NewProduction()
