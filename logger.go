@@ -9,7 +9,9 @@ import (
 	"go.uber.org/zap/zapcore"
 )
 
-var L *zap.SugaredLogger
+var (
+	L *zap.SugaredLogger
+)
 
 // Init - initializes the logger, different in test and production, call after config.Init
 func Init(isProductionMode bool) {
