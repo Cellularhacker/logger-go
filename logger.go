@@ -36,125 +36,125 @@ func Init(isProductionMode bool) {
 
 func Fatal(args ...interface{}) {
 	if L == nil {
-		log.Fatal(args)
+		log.Fatal(args...)
 		return
 	}
 
-	L.Fatal(args)
+	L.Fatal(args...)
 }
 func Fatalf(format string, args ...interface{}) {
 	if L == nil {
-		log.Fatalf(format, args)
+		log.Fatalf(format, args...)
 		return
 	}
 
-	L.Fatalf(format, args)
+	L.Fatalf(format, args...)
 }
 func Fatalln(args ...interface{}) {
 	if L == nil {
-		log.Fatalln(args)
+		log.Fatalln(args...)
 		return
 	}
 
-	L.Fatalln(args)
+	L.Fatalln(args...)
 }
 
 func Info(args ...interface{}) {
 	if L == nil {
-		log.Info(args)
+		log.Info(args...)
 		return
 	}
 
-	L.Info(args)
+	L.Info(args...)
 }
 func Infof(format string, args ...interface{}) {
 	if L == nil {
-		log.Infof(format, args)
+		log.Infof(format, args...)
 		return
 	}
 
-	L.Infof(format, args)
+	L.Infof(format, args...)
 }
 func Infoln(args ...interface{}) {
 	if L == nil {
-		log.Fatalln(args)
+		log.Infoln(args...)
 		return
 	}
 
-	L.Infoln(args)
+	L.Infoln(args...)
 }
 
 func Warn(args ...interface{}) {
 	if L == nil {
-		log.Warn(args)
+		log.Warn(args...)
 		return
 	}
 
-	L.Warn(args)
+	L.Warn(args...)
 }
 func Warnf(format string, args ...interface{}) {
 	if L == nil {
-		log.Warnf(format, args)
+		log.Warnf(format, args...)
 		return
 	}
 
-	L.Warnf(format, args)
+	L.Warnf(format, args...)
 }
 func Warnln(args ...interface{}) {
 	if L == nil {
-		log.Fatalln(args)
+		log.Warnln(args...)
 		return
 	}
 
-	L.Warnln(args)
+	L.Warnln(args...)
 }
 
 func Debug(args ...interface{}) {
 	if L == nil {
-		log.Debug(args)
+		log.Debug(args...)
 		return
 	}
 
-	L.Debug(args)
+	L.Debug(args...)
 }
 func Debugf(format string, args ...interface{}) {
 	if L == nil {
-		log.Debugf(format, args)
+		log.Debugf(format, args...)
 		return
 	}
 
-	L.Debugf(format, args)
+	L.Debugf(format, args...)
 }
 func Debugln(args ...interface{}) {
 	if L == nil {
-		log.Fatalln(args)
+		log.Debugln(args...)
 		return
 	}
 
-	L.Debugln(args)
+	L.Debugln(args...)
 }
 
 func Error(args ...interface{}) {
 	if L == nil {
-		log.Error(args)
+		log.Error(args...)
 		return
 	}
 
-	L.Error(args)
+	L.Error(args...)
 }
 func Errorf(format string, args ...interface{}) {
 	if L == nil {
-		log.Errorf(format, args)
+		log.Errorf(format, args...)
 		return
 	}
 
-	L.Errorf(format, args)
+	L.Errorf(format, args...)
 }
 func Errorln(args ...interface{}) {
 	if L == nil {
-		log.Fatalln(args)
+		log.Errorln(args...)
 		return
 	}
 
-	L.Errorln(args)
+	L.Errorln(args...)
 }
